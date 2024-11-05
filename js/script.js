@@ -25,8 +25,12 @@ Math.random lager et tilfeldig nummer mellom 0 og 1, vi ganger dette med lengden
 */
 const randomNum = Math.floor(Math.random() * imageUrls.length)
 
+const randomUrl = imageUrls[randomNum]
+
 // Her setter vi src til mainImage til en tilfeldig verdi fra imageUrls arrayet:
-mainImage.src = imageUrls[randomNum] // [randomNum]: randomNum kan være en verdi mellom 0 og lengden på arrayet.
+mainImage.src = randomUrl // [randomNum]: randomNum kan være en verdi mellom 0 og lengden på arrayet.
+
+mainImage.id = randomUrl
 
 
 /* Her lager vi en loop som går igjennom alle elementer i imageUrls arrayet. Med forEach kjøres koden innenfor {} hver gang til alle elementene er kjørt igjennom.
