@@ -40,7 +40,7 @@ Dette skjer hver gang loopen kjøres:
 3. det nye elementet blir plassert i gallery (div med id="gallery") gjennom appendChild
 
 */ 
-imageUrls.forEach(url => {
+imageUrls.map(url => {
     const newImage = document.createElement("img")
     newImage.src = url
 
