@@ -10,11 +10,11 @@ const gallery = document.getElementById("gallery") // div med id="gallery"
    Vi bruker et array for å lagre all infoen om de forskjellige kildene til bildene.
 */
 const imageUrls = [
-    "/battle.png",
-    "/catHotdog.png",
-    "/greenPlanet.png",
-    "/magicalValley.png",
-    "/stripes.png", 
+    "../public/battle.png",
+    "../public/catHotdog.png",
+    "../public/greenPlanet.png",
+    "../public/magicalValley.png",
+    "../public/stripes.png", 
     "https://images.unsplash.com/photo-1506755855567-92ff770e8d00?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNhdHxlbnwwfHwwfHx8MA%3D%3D"
 ]
 
