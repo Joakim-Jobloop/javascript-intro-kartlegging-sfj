@@ -3,7 +3,7 @@
 
 /* Først fanger vi opp elementene vi ønsker å manipulere fra index.html
    Vi bruker id fra html elementene som referanser inn i javascript (andre måter finnes).
-*/ 
+*/
 const mainContent = document.getElementById("content") // div med id="content"
 const mainImage = document.getElementById("img") // img med id="img"
 const gallery = document.getElementById("gallery") // div med id="gallery"
@@ -16,7 +16,7 @@ const imageUrls = [
     "../images/catHotdog.png",
     "../images/greenPlanet.png",
     "../images/magicalValley.png",
-    "../images/stripes.png", 
+    "../images/stripes.png",
     "https://images.unsplash.com/photo-1506755855567-92ff770e8d00?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNhdHxlbnwwfHwwfHx8MA%3D%3D"
 ]
 
@@ -41,7 +41,7 @@ Dette skjer hver gang loopen kjøres:
 2. dette nye elementet får tilført en verdi i attributten src fra imageUrls arrayet
 3. det nye elementet blir plassert i gallery (div med id="gallery") gjennom appendChild
 
-*/ 
+*/
 imageUrls.map(url => {
     const newImage = document.createElement("img")
     newImage.src = url
@@ -51,5 +51,14 @@ imageUrls.map(url => {
 })
 
 
+function themeSwitcher() {
+    document.body.classList.toggle("light");
+    document.body.classList.toggle("dark");
 
+    // if (document.body.classList.value === "dark") {
+    //     return document.body.classList.value = "light"
+    // } else {
+    //     return document.body.classList.value = "dark"
+    // }
+}
 
