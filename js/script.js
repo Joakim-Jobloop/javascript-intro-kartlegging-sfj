@@ -10,11 +10,11 @@ const gallery = document.getElementById("gallery") // div med id="gallery"
    Vi bruker et array for å lagre all infoen om de forskjellige kildene til bildene.
 */
 const imageUrls = [
-    "public/images/battle.png",
-    "public/images/catHotdog.png",
-    "public/images/greenPlanet.png",
-    "public/images/magicalValley.png",
-    "public/images/stripes.png", 
+    "/images/battle.png",
+    "/images/catHotdog.png",
+    "/images/greenPlanet.png",
+    "/images/magicalValley.png",
+    "/images/stripes.png", 
     "https://images.unsplash.com/photo-1506755855567-92ff770e8d00?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNhdHxlbnwwfHwwfHx8MA%3D%3D"
 ]
 
@@ -25,12 +25,9 @@ Math.random lager et tilfeldig nummer mellom 0 og 1, vi ganger dette med lengden
 */
 const randomNum = Math.floor(Math.random() * imageUrls.length)
 
-const randomUrl = imageUrls[randomNum]
-
 // Her setter vi src til mainImage til en tilfeldig verdi fra imageUrls arrayet:
-mainImage.src = randomUrl // [randomNum]: randomNum kan være en verdi mellom 0 og lengden på arrayet.
+mainImage.src = imageUrls[randomNum] // [randomNum]: randomNum kan være en verdi mellom 0 og lengden på arrayet.
 
-mainImage.id = randomUrl
 
 
 /* Her lager vi en loop som går igjennom alle elementer i imageUrls arrayet. Med forEach kjøres koden innenfor {} hver gang til alle elementene er kjørt igjennom.
